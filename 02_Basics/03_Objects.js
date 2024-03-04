@@ -1,5 +1,5 @@
 // singleton
-// Object.create
+// Object.create  // Constructor
 
 // object literals
 
@@ -24,7 +24,7 @@ const jsUser = {
 // console.log(jsUser[mySym]);
 
 jsUser.email = "vaibhav.v@chatgpt.com"
-// Object.freeze(jsUser)
+// Object.freeze(jsUser)  // it will freeze the object in which we cannot change the values
 jsUser.email = "vaibhav@microsoft.com"
 
 // console.log(jsUser);
