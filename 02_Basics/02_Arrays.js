@@ -9,7 +9,7 @@ const dcHeroes = ["superman", "batman", "flash"]
 // const allHeroes = marvelHeroes.concat(dcHeroes);  This is the right way
 // console.log(allHeroes); 
 
-const allNewHeroes = [...marvelHeroes, ...dcHeroes] // this is spread operator and it is the best and another way to concat the arrays
+const allNewHeroes = [...marvelHeroes, ...dcHeroes] // '...' this is spread operator and it is the best and another way to concat the arrays
 
 // console.log(allNewHeroes);
 
