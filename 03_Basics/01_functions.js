@@ -74,3 +74,66 @@ function returnSecondValue(getArray){
 // console.log(returnSecondValue(myNewArray));
 console.log(returnSecondValue([200, 400, 600, 800]));
 
+
+
+
+
+
+
+
+
+// function name1(){
+//     console.log('V');
+//     console.log('A');
+//     console.log('I');
+//     console.log('B');
+//     console.log('H');
+//     console.log('A');
+//     console.log('V');
+// }
+// // name1();
+
+
+// // function addition(num1,num2){
+// //     console.log(`Sum of ${num1} and ${num2} is ${num1+num2}.`);
+// // }
+
+// // addition(100,50)
+
+
+// function addition(num1,num2){
+//     return num1 + num2
+// }
+
+// let sum = addition(24,26)
+
+// // console.log(sum);
+
+// function userLoginMsg(username){
+//     if (username === undefined) {
+//         console.log("Please enter a username");
+//         return
+//     }
+//     return `${username} just logged in.`
+// }
+
+// // console.log(userLoginMsg());
+
+
+// function calCartPrice(...num1){
+//     return num1
+// }
+
+// console.log(calCartPrice(200,400,600));
+
+// const user1 = {
+//     username : "Cartoon",
+//     price : 200
+// }
+
+// function objectHandle(anyobj){
+//     console.log(`The price of ${anyobj.username} is ${anyobj.price}`)
+// }
+
+// objectHandle(user1);
+
