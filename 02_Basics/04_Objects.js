@@ -1,4 +1,4 @@
-// const tinderUser = new Object(); //singleton Object
+ // const tinderUser = new Object(); //singleton Object
 const tinderUser = {}  // non singleton Object
 
 tinderUser.id ="123";
@@ -55,7 +55,7 @@ const users = [
 
 users[1].id
 
-console.log(tinderUser);
+// console.log(tinderUser);
 
 // console.log(Object.keys(tinderUser));
 // console.log(Object.values(tinderUser));
@@ -74,7 +74,6 @@ const course = {
 const {courseInstructor: instructor} = course  //de-structuring the objects
 
 console.log(instructor);
-
 
 // API's (Application programming interface)
 
