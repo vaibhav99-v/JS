@@ -36,11 +36,11 @@
 
 // Step 1 -> Global Execution and Global Environment
 
-// Global Execution started and it will allocate in this.
+// Global Execution started and it will allocate in 'this' variable. In browser's execution environment, 'this' variable always assigned as window object. 
 
 // Step 2 -> Memory Creation Phase
 
-// In this phase, all variables intializes as undefined.
+// In this step, all variables are initially allocated space as undefined.
 
 //   Example -> val1 => undefined
 //              val2 => undefined
@@ -50,6 +50,8 @@
 //     In this example, we can see variables i.e. val1 and val2 initialzes as undefined. And addNum function initialze function defination
 
 // Step 3 => Execution Phase
+
+// All types of algorithm are done in this phase for all variables. And for every function has created new executional context and the resultant value will go to the Global execution context. Once their task is complete it will delete.
 
 //   Example -> val1 <- 10       New Executional Context
 //              val2 <- 5       +------------------+
