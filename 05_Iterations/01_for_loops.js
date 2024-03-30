@@ -1,4 +1,4 @@
-// for loop
+ // for loop
 
 // for (let i = 0; i < 10; i++) {
 //     const element = i;
@@ -45,9 +45,9 @@
 // }
 
 
-for(let i = 1; i <=10; i++){
-    if (i==5) {
-        console.log("Detected 5");
+for(let i = 1; i <=20; i++){
+    if (i==5 || i==10 || i==15) {
+        console.log(`Detected ${i}`);
         continue;
     }
     console.log(`Value of i is ${i}`);
