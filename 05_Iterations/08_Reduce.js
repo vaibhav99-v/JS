@@ -20,23 +20,23 @@ myTotal = myNums.reduce( (acc, currval) => acc + currval, 0)
 
 const shoppingCart = [
     {
-        courseName : 'py course',
+        itemName : 'py course',
         coursePrice : 599
     },
     {
-        courseName : 'web dev course',
+        itemName : 'web dev course',
         coursePrice : 1990
     },
     {
-        courseName : 'data science course',
+        itemName : 'data science course',
         coursePrice : 20000
     },
     {
-        courseName : 'cpp & dsa course',
+        itemName : 'cpp & dsa course',
         coursePrice : 4999
     },
     {
-        courseName : 'UI/UX course',
+        itemName : 'UI/UX course',
         coursePrice : 2500
     },
 ]

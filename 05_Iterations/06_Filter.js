@@ -13,18 +13,19 @@
 
 const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
+// Type 1 
 // const newNums = myNums.filter( (num) => num > 4 )
 
 // console.log(newNums);
 
-
+// Type 2
 // const newNums = myNums.filter( (num) => {
 //     return num > 4
 // } )
 
 // console.log(newNums);
 
-
+// Type 3
 // const newNums = []
  
 // myNums.filter( (num) => {
@@ -56,6 +57,4 @@ userBooks = myBooks.filter( (bk) => {return bk.publish >= 2000})
 
 userBooks = myBooks.filter( (bk) => bk.publish <= 2000 && bk.genre === 'Science' )
 
-console.log(userBooks);
-
-
+// console.log(userBooks);
