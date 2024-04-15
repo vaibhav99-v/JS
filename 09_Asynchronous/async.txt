@@ -1,0 +1,34 @@
+Javascript is a synchronous programming language which means the code will execute line by line.
+
+Javascript
+* synchronous :- default
+* single threaded
+
+#Execution Context
+-------------------
+* execute one line of code at a time.
+
+|-->console.log->1
+|-->console.log->2
+|
+v
+  +----------+      +-----------+
+  |CALL Stack|      |Memory Heap|
+  +----------+      +-----------+
+
+each operation waits for the last one to complete before execution.
+
+
+Blocking Code     Vs    Non Blocking code
+----------------------------------------- 
+  |                            |
+  v                            v
+ Block the flow of       Does not block 
+ program                   execution
+   |                           |
+   v                           v
+ Read file sync           Read file Async
+
+
+
+
