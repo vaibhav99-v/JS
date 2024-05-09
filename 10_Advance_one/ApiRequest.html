@@ -4,29 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #profile{
+            background-color: rgb(77, 152, 243);
+        }
+
+        img{
+            border-radius: 50%;
+        }
+    </style>
+    
 </head>
-<body style="background-color: #212121; color: white;">
-    Value	State	Description
-0	UNSENT	Client has been created. open() not called yet.
-1	OPENED	open() has been called.
-2	HEADERS_RECEIVED	send() has been called, and headers and status are available.
-3	LOADING	Downloading; responseText holds partial data.
-4	DONE	The operation is complete.
+<body style="background-color: #212121; color: #fff;">   
+    <div id="card">
+        <img src="" alt="" class="cardphoto">
+        <h3>To check profile</h3>
+        <button id="profile">Click here</button>
+        <div id="container">
+            <h2></h2>
+            <p style="color: plum;"></p>
+        </div>
+    </div>
 </body>
 <script>
-
     const requestUrl = 'https://api.github.com/users/hiteshchoudhary';
-
     const xhr = new XMLHttpRequest();
     xhr.open('GET', requestUrl);
-    xhr.onreadystatechange = function (){
+    xhr.onreadystatechange = function(){
         console.log(xhr.readyState);
         if(xhr.readyState === 4){
             const data = JSON.parse(this.responseText)
-            console.log(data.followers);
-            console.log(typeof data);
-            console.log(data);
             
+            // console.log(data);
+            // console.log(typeof data);
+            document.querySelector('#profile').addEventListener('click', function(){
+                document.querySelector('button').remove();
+                document.querySelector('h3').remove();
+                document.querySelector('.cardphoto').setAttribute('src', `${data.avatar_url}`);
+                document.querySelector('h2').innerHTML = `${data.name}`;
+                const h3 = document.createElement('h3').innerHTML = "Software Engineer";
+                document.querySelector('p').innerHTML = `Followers : ${data.followers}`;
+                
+            //     document.querySelector('.followers').addEventListener('click', function(e){
+            //     let h4 = document.createElement('h4')
+            //     h4.innerHTML = `Followers : ${data.followers}`
+            //     h4.style.color = "powderblue"
+            //     document.getElementById('container').appendChild(h4);  
+                
+            // })
+            })
+            
+            // document.querySelector('p').innerHTML = `Followers : ${data.followers}`;
         }
     }
     xhr.send();

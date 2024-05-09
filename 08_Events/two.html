@@ -6,28 +6,24 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Chai or code</h1>
-    <button id="stop">Stop</button>
+    <h1>Chai aur Code</h1>
+    <button class="stop">Stop</button>
 </body>
 <script>
-    const sayVaibhav = function() {
-    console.log("Vaibhav");
+    setTimeout(function(){
+        console.log("Vaibhav");
+    }, 2000);
+
+    const changeText = function(){document.querySelector('h1').innerHTML = "Best JS series"
     }
 
-    const changeText = function() {
-        document.querySelector('h1').innerHTML = "best JS series"
-    }
-
-    setTimeout(sayVaibhav, 2000);
-    
     const changeMe = setTimeout(changeText, 2000);
 
-    document.querySelector('#stop').addEventListener('click', function(){
+    document.querySelector('.stop').addEventListener('click', function(){
         clearTimeout(changeMe);
-        console.log("STOPPED");
+        console.log('STOPPED');
     })
 
-
-
+    
 </script>
 </html>

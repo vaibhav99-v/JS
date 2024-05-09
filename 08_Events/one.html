@@ -8,20 +8,27 @@
 <body style="background-color: #414141; color: whitesmoke;">
     <h1>Welcome to Our Webpage</h1>
     <ul id="steps">These are steps:
-        <li id="1">Start</li>
-        <li id="2">Request</li>
-        <li id="3">Waiting for the response</li>
-        <li id="4">Generated the response</li>
-        <li id="5">Getting the Frontend</li>
-        <li id="6">Stop</li>
+        <li id="1">Start 
+        </li>
+        <li id="2">Request   
+        </li>
+        <li id="3">Waiting for the response  
+        </li>
+        <li id="4">Generated the response
+        </li>
+        <li id="5">Getting the Frontend
+        </li>
+        <li id="6">Stop
+        </li>
     </ul>
 </body>
 <script>
     document.querySelector('#steps').addEventListener('click', function(e){
-        console.log(e.target);
-        let removeIt = e.target
-        removeIt.remove();
-        // removeIt.parentNode.removeChild(removeIt)
+        // console.log(e.target);
+        let removeIt = e.target.parentNode
+        console.log(removeIt);
+        // removeIt.remove();
+        removeIt.removeChild(removeIt)
     }, false)
 
 </script>
